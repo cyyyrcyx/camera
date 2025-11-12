@@ -12,8 +12,8 @@ function createWindow(): void {
   const mainWindow = new BrowserWindow({
     width: 720,
     height: 405,
-    minHeight: 300,
-    minWidth: 300,
+    minHeight: 80,
+    minWidth: 80,
     alwaysOnTop: true,
     show: false,
     autoHideMenuBar: true,
@@ -29,7 +29,6 @@ function createWindow(): void {
     }
   })
   if (is.dev) mainWindow.webContents.openDevTools()
-  mainWindow.setAspectRatio(16 / 9)
 
   // mainWindow.webContents.openDevTools()
   //缩放比例
